@@ -8,8 +8,8 @@ on:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
-  schedule:
-    - cron: '*/15 * * * *'  # Every minute
+  # schedule:
+  #   - cron: '*/15 * * * *'  # Every minute
 
 jobs:
   build:
