@@ -39,7 +39,7 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Run Unit Tests
       run: |
-        pytest tests/test_unit.py
+        pytest --cov=. tests/test_unit.py
     - name: Run Integration Tests
       run: |
-        pytest tests/test_integration.py
+        pytest --cov=. tests/test_integration.py
