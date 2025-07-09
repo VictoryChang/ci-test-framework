@@ -19,7 +19,7 @@ async def get_api_sum(a: int, b: int) -> dict:
 
 
 @app.get("/api/double_sum")
-async def get_api_sum(a: int, b: int) -> dict:
+async def get_api_double_sum(a: int, b: int) -> dict:
     return {"result": double_sum(a, b)}
 
 
@@ -29,9 +29,8 @@ async def get_ui_sum(a: int, b: int):
 
 
 @app.get("/ui/double_sum", response_class=HTMLResponse)
-async def get_ui_sum(a: int, b: int):
+async def get_ui_double_sum(a: int, b: int):
     return f'<div id="double_sum">{double_sum(a, b)}</div>'
-
 
 
 if __name__ == "__main__":

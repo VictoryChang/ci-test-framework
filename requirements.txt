@@ -1,4 +1,5 @@
 fastapi
+flake8
 playwright
 pytest
 pytest-cov

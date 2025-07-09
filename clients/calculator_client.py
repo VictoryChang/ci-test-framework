@@ -7,7 +7,7 @@ class CalculatorClient:
         self.session = BaseUrlSession("http://127.0.0.1:8000")
 
     def get_sum(self, a: int, b: int) -> Response:
-        return self.session.get(f"/api/sum", params={"a": a, "b": b})
+        return self.session.get("/api/sum", params={"a": a, "b": b})
 
     def get_double_sum(self, a: int, b: int) -> Response:
-        return self.session.get(f"/api/double_sum", params={"a": a, "b": b})
+        return self.session.get("/api/double_sum", params={"a": a, "b": b})

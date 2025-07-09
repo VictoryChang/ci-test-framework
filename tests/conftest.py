@@ -1,3 +1,4 @@
+from playwright.sync_api import sync_playwright
 import pytest
 
 from clients.calculator_client import CalculatorClient
@@ -6,10 +7,6 @@ from clients.calculator_client import CalculatorClient
 @pytest.fixture(scope="session")
 def calculator_client():
     return CalculatorClient()
-
-
-from playwright.sync_api import sync_playwright
-import pytest
 
 
 @pytest.fixture(scope="module")
