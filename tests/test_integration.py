@@ -1,4 +1,4 @@
-from calculator import sum
+from calculator import double_sum
 
-def test_sum_integration():
-    assert sum(1, 2) == 3
+def test_double_sum():
+    assert double_sum(1, 2) == 6
